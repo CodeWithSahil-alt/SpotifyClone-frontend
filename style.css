@@ -20,7 +20,7 @@ body {
 }
 
 .main {
-	background-color: blue;
+	background-color: #121212;
 	flex: 1;
 	border-radius: 1rem;
 	overflow: auto;
@@ -128,4 +128,58 @@ a {
 	font-weight: 600;
 	margin-top: 0.5rem;
 	height: 2rem;
+}
+
+.sticky-nav {
+	position: sticky;
+	top: 0;
+	background-color: #121212;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.st-nav-icons  {
+	width: 6rem;
+}
+
+.st-nav-icons img {
+	background-color: black;
+	vertical-align: middle;
+	margin-left: 0.5rem;
+	padding: 0.35rem;
+	border-radius: 50%;
+}
+
+.st-nav-options {
+	display: flex;
+	align-items: center;
+}
+
+.st-nav-options .badge {
+	margin-top: 0;
+}
+
+.st-nav-options .option {
+	margin-right: 0.9rem;
+}
+
+.st-nav-options .fa-user {
+	background-color: black;
+	vertical-align: middle;
+	padding: 0.5rem;
+	border-radius: 50%;
+	font-size: 1rem;
+}
+
+.dark-badge {
+	background-color: black;
+	color: white;
+}
+
+@media (max-width: 1000px) {
+	.sticky-nav .hide {
+		display: none;
+	}
 }

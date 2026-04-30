@@ -32,7 +32,10 @@ body {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 72px;
+	height: 4.5rem;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
 }
 
 a {
@@ -46,7 +49,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 100px;
+	height: 6.25rem;
 	padding: 0.5rem 0.75rem;
 }
 
@@ -124,7 +127,7 @@ a {
 .badge {
 	background-color: white;
 	border: none;
-	border-radius: 100px;
+	border-radius: 6.25rem;
 	padding: 0.25rem 1rem;
 	font-weight: 600;
 	margin-top: 0.5rem;
@@ -134,6 +137,7 @@ a {
 .sticky-nav {
 	position: sticky;
 	top: 0;
+	z-index: 10;
 	background-color: #121212;
 	display: flex;
 	justify-content: space-between;
@@ -192,7 +196,7 @@ a {
 
 .card {
 	background-color: #232323;
-	width: 200px;
+	width: 12.5rem;
 	border-radius: 0.5rem;
 	padding: 1rem;
 	margin-left: 1.5rem;
@@ -211,4 +215,47 @@ a {
 .card-info {
 	font-size: 0.85rem;
 	opacity: 0.8;
+}
+
+.album {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 3.5rem;
+}
+
+.album img {
+	height: 3.5rem;
+	margin: 0 0.5rem;
+}
+
+.album .descp {
+	margin: 0 0.25rem;
+}
+
+.album .descp-title{
+	font-size: 0.84375rem;
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+}
+
+.album .descp-info {
+	font-size: 0.71875rem;
+	opacity: 0.7;
+}
+
+.album .icon {
+	font-size: 1.25rem;
+	margin: 0 0.5rem;
+	height: 1.25rem;
+	width: 1.25rem;
+}
+
+.playback-bar {
+	width: 50%;
+}
+
+.controls {
+	width: 25%;
 }
